@@ -45,6 +45,7 @@ class LowLevelManager: Coworker {
 
 let topManager = Manager(level: 1)
 
+
 let secondLowLevelManagerOne = LowLevelManager(level: 2)
 let secondLowLevelManagerTwo = LowLevelManager(level: 2)
 
@@ -52,5 +53,3 @@ topManager.hire(coworker: secondLowLevelManagerOne)
 topManager.hire(coworker: secondLowLevelManagerTwo)
 topManager.getInfo()
 
-secondLowLevelManagerTwo.hire(coworker: topManager)
-secondLowLevelManagerTwo.getInfo()
